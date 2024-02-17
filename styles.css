@@ -1,0 +1,297 @@
+*{
+    margin: 0;
+
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url('https://plus.unsplash.com/premium_photo-1678566111481-8e275550b700?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fFRlY25vbG9naWF8ZW58MHx8MHx8fDA%3D');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 10px;
+}
+
+h1{
+    font-family: "Oswald", sans-serif;
+    color: #fff;
+    font-size: 40px;
+}
+nav{
+    width: 50%;
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 700px;
+}
+
+li{
+    font-family: "Oswald", sans-serif;
+    font-size: 21px;
+    color: #fff;
+    cursor: pointer;
+}
+
+li:hover{
+    color:rgb(218, 65, 197);
+}
+
+.arrows{
+    width: 60px;
+    height: 172px;
+    bottom: 20px;
+}
+
+.arrows path{
+    stroke: #fff;
+    fill: transparent;
+    stroke-width: 1px;
+    animation: arrow 2s infinite;
+    -webkit-animation: arrow 2s infinite";
+}
+
+@keyframes arrow
+{
+0% {opacity: 0}
+40% {opacity: 1}
+80% {opacity: 0}
+100% {opacity: 0}
+}
+
+@-webkit-keyframes arrow
+{
+0% {opacity: 0}
+40% {opacity: 1}
+80% {opacity: 0}
+100% {opacity: 0}    
+}
+
+.arrows path.a1{
+    animation-delay: -1s;
+    -webkit-animation-delay: -1s;
+}
+
+.arrows path.a2{
+    animation-delay:-0.5s;
+    -webkit-animation-delay:-0.5s;
+}
+
+.arrows path.a3{
+    animation-delay:0s;
+    -webkit-animation-delay:0;
+}
+
+.content-container{
+    height: 100vh;
+    background-color: #333;
+}
+
+.profile-container{
+    color: #333;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('./logo/brncliv.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.profile-contant{
+    width: 30%;
+}
+
+.profile-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.profile-image{
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    border: 4px solid rgb(218, 65, 197);
+}
+
+.name-text{
+    font-family: "Oswald", sans-serif; 
+    font-size: 21px;
+    margin-top: 15px;
+}
+
+.profile-text{
+    font-family: "Oswald", sans-serif; 
+    font-size: 17px;
+    margin-top: 10px;
+    text-align: center;
+    width: 80%;
+}
+
+.profile-button{
+    width: 150px;
+    height: 50px;
+    border-radius: 15px;
+    border: none;
+    background-color: rgb(218, 65, 197);
+    color: #fff;
+    font-family: "Oswald", sans-serif; 
+    margin-top: 35px;
+    cursor: pointer;
+}
+
+.diviser{
+    width:100%;
+    border-top: .5px solid #bfbfbf;
+    margin: 20px 0;
+}
+
+.icons-container{
+    display:flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.incons-iten{
+    width: 85px;
+    height: auto;
+}
+
+.profile-sinopse{
+    width:430px;
+    font-family: "Oswald", sans-serif; 
+    color: #fff;
+    font-size: 17px;
+}
+
+.project-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('./logo/bannerPort.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.project-content{
+    width: 70%;
+    height: 88%;
+    display: grid;
+    grid-template-rows: repeat(1fr, 3);
+    row-gap: 5px;
+}
+
+.position-container{
+    width: 100%;
+    display: flex;
+}
+
+.rigth {
+    justify-content: flex-end;
+}
+
+.left {
+    justify-content: flex-start;
+}
+
+.project-card{
+    width: 700px;
+    height: 200px;
+    background-color: #000;
+    box-shadow: 5px 5px 5px #000;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.card-reverse{
+    flex-direction: row-reverse;
+}
+
+.project-image{
+    width: 300px;
+    height: 80%;
+    position: relative;
+    border-radius: 10px;
+    right: 30px;
+    top: 10px;
+}
+
+.image-reverse{
+    left:30px;
+}
+
+.project-text{
+    font-family: "Oswald", sans-serif;
+    color:#fff;
+    font-size: 10px;
+
+}
+
+.form-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fcc0fc86;
+    width: 500px;
+    height: 600px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+label{
+    display: block;
+    
+}
+
+input{
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+}
+
+textarea{
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    height: 300px;
+    min-height: 300px;
+    max-height: 300px;
+    border-radius: 8px;
+}
+
+button{
+    width: 100%;
+    border: none;
+    background: #fff;
+    border-radius: 8px;
+    padding: 8px 12px;
+
+}
